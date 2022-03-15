@@ -22,7 +22,7 @@ recognition.addEventListener('result', (e)=>{
       p.innerText = 'Muy bien gracias';
       texts.appendChild(p)
     }
-    if (text.includes("Cual es tu nombre") || text.includes('Como te llamas')) {
+    if (text.includes("Cual ES tu nombre?") || text.includes('Como te llamas')) {
       p = document.createElement('p');
       p.classList.add('replay');
       p.innerText = 'Mi nombre es Feona';
