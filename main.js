@@ -16,25 +16,25 @@ recognition.addEventListener('result', (e)=>{
 
   p.innerText = text;
   if(e.results[0].isFinal){
-    if (text.includes('how are you')) {
+    if (text.includes('Como estas')) {
       p = document.createElement('p');
       p.classList.add('replay');
-      p.innerText = 'I am fine';
+      p.innerText = 'Muy bien gracias';
       texts.appendChild(p)
     }
-    if (text.includes("what's your name") || text.includes('what is your name')) {
+    if (text.includes("Cual es tu nombre") || text.includes('Como te llamas')) {
       p = document.createElement('p');
       p.classList.add('replay');
-      p.innerText = 'My Name is Cifar';
+      p.innerText = 'Mi nombre es Feona';
       texts.appendChild(p)
     }
-    if (text.includes('open my YouTube')) {
+    if (text.includes('Abre mi pagina')) {
       p = document.createElement('p');
       p.classList.add('replay');
       p.innerText = 'opening youtube channel';
       texts.appendChild(p)
-      console.log('opening youtube')
-      window.open('https://www.youtube.com/channel/UCdxaLo9ALJgXgOUDURRPGiQ')
+      console.log('Abriendo Codigo D')
+      window.open('http://www.codigo-d.com')
     }
     p = document.createElement('p');
   }
